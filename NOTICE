@@ -1,0 +1,5 @@
+Simple binding of qrencode library released under the public domain.Code
+extracted from qrurl (http://github.com/benoitc/qrurl) code. 
+
+Maintainer: benoît chesneau <benoitc@e-engura.org>
+Packaged by Rémy HUBSCHER <remy.hubscher@ionyse.com>
