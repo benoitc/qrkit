@@ -41,7 +41,7 @@ Simple usage
 
 ::
     
-    from qrimage.qrimg import encode_to_img
+    from qrkit.qrimg import encode_to_img
     
     img = encode_to_img('http://www.python.org/', width=300, border=10)
     img.save('qrimage.png', 'PNG', quality=80)
