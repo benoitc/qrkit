@@ -27,6 +27,9 @@ setup(
             'README.rst'
         )).read(),
      
+
+    author = "Benoit Chesneau",
+    author_email = "benoitc@e-engura.org",
     url = "http://github.com/benoitc/qrkit",
 
     classifiers = [
@@ -39,8 +42,10 @@ setup(
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries',
     ],
+
     cmdclass = {'build_ext': build_ext},
     ext_modules = ext_modules,
 
     packages = ['qrkit'],
+    requires=['PIL', 'Cython'],
 )
