@@ -13,9 +13,10 @@ To build the binding you will need to install:
  - `libqrencode-dev <apt://libqrencode-dev>`_
  - `Cython <apt://cython>`_
 
-To use it you will need:
+To use it you will need either:
 
- - `Python Imaging Librairy <apt://python-imaging>`_
+ - `Python Imaging Library <http://www.pythonware.com/products/pil/>`_
+ - `Pillow <https://pillow.readthedocs.org/>`_
 
 
 Installation
