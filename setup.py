@@ -28,8 +28,6 @@ setup(
         )).read(),
      
 
-    author = "Benoit Chesneau",
-    author_email = "benoitc@e-engura.org",
     url = "http://github.com/benoitc/qrkit",
 
     classifiers = [
@@ -47,5 +45,5 @@ setup(
     ext_modules = ext_modules,
 
     packages = ['qrkit'],
-    requires=['PIL', 'Cython'],
+    requires=['Cython'],
 )

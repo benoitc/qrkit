@@ -1,4 +1,4 @@
-qrqit
+qrkit
 -----
 
 Simple binding of qrencode library released under the public domain
