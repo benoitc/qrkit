@@ -27,6 +27,7 @@ setup(
             'README.rst'
         )).read(),
      
+
     url = "http://github.com/benoitc/qrkit",
 
     classifiers = [
@@ -39,8 +40,10 @@ setup(
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries',
     ],
+
     cmdclass = {'build_ext': build_ext},
     ext_modules = ext_modules,
 
     packages = ['qrkit'],
+    requires=['Cython'],
 )

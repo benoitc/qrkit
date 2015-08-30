@@ -1,5 +1,6 @@
 include .gitignore
 include NOTICE
 include README.rst
+include qrkit/qrencode.c
 
 recursive-include examples *
