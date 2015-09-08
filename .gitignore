@@ -10,7 +10,7 @@ setuptools-*
 *.so
 distribute-0.6.8-py2.6.egg
 distritbute-0.6.8.tar.gz
-qrqit.egg-info
+qrkit.egg-info
 nohup.out
 .coverage
 doc/.sass-cache
