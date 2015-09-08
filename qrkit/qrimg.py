@@ -7,10 +7,13 @@ from ImageOps import expand as img_expand
 from Image import fromstring as img_fromstring
 from qrkit.qrencode import encode, to_matrix
 
+
 def encode_to_img(string, width=400, border=10):
+    if not string or not string.strip(b'\x00'):
+        raise ValueError("You cannot encode a null data in a qrcode.")
     qrcode = encode(string)
     matrix = to_matrix(qrcode)
-   
+
     dotsize = (width - (border * 2)) / qrcode['width']
     realwidth = qrcode['width'] * dotsize
 
