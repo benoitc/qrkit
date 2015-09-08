@@ -1,10 +1,18 @@
-# -*- coding: utf-8 -
+# -*- coding: utf-8 -*-
 #
-# This file is part of qrkit releasedi in the Public Domain. 
+# This file is part of qrkit released in the Public Domain.
 # See the NOTICE for more information.
 
-from ImageOps import expand as img_expand
-from Image import fromstring as img_fromstring
+try:
+    from PIL.ImageOps import expand as img_expand
+    from PIL.Image import fromstring as img_fromstring
+except ImportError:
+    try:
+        from ImageOps import expand as img_expand
+        from Image import fromstring as img_fromstring
+    except ImportError:
+        raise ImportError('Please install PIL or Pillow.')
+
 from qrkit.qrencode import encode, to_matrix
 
 
