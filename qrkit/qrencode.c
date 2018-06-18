@@ -1118,7 +1118,7 @@ static PyObject *__pyx_codeobj__5;
 static PyObject *__pyx_codeobj__7;
 /* Late includes */
 
-/* "qrkit/qrencode.pyx":29
+/* "qrkit/qrencode.pyx":27
  * 
  * 
  * def encode(char *string, version=5, case_sensitive=True,             # <<<<<<<<<<<<<<
@@ -1194,7 +1194,7 @@ static PyObject *__pyx_pw_5qrkit_8qrencode_1encode(PyObject *__pyx_self, PyObjec
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "encode") < 0)) __PYX_ERR(0, 29, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "encode") < 0)) __PYX_ERR(0, 27, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1211,7 +1211,7 @@ static PyObject *__pyx_pw_5qrkit_8qrencode_1encode(PyObject *__pyx_self, PyObjec
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_string = __Pyx_PyObject_AsWritableString(values[0]); if (unlikely((!__pyx_v_string) && PyErr_Occurred())) __PYX_ERR(0, 29, __pyx_L3_error)
+    __pyx_v_string = __Pyx_PyObject_AsWritableString(values[0]); if (unlikely((!__pyx_v_string) && PyErr_Occurred())) __PYX_ERR(0, 27, __pyx_L3_error)
     __pyx_v_version = values[1];
     __pyx_v_case_sensitive = values[2];
     __pyx_v_mode = values[3];
@@ -1219,7 +1219,7 @@ static PyObject *__pyx_pw_5qrkit_8qrencode_1encode(PyObject *__pyx_self, PyObjec
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("encode", 0, 1, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 29, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("encode", 0, 1, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 27, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("qrkit.qrencode.encode", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1254,31 +1254,31 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_encode(CYTHON_UNUSED PyObject *__pyx_
   PyObject *__pyx_t_14 = NULL;
   __Pyx_RefNannySetupContext("encode", 0);
 
-  /* "qrkit/qrencode.pyx":35
+  /* "qrkit/qrencode.pyx":33
  *     cdef QRcode *_qrcode
  * 
  *     str_copy = string             # <<<<<<<<<<<<<<
  *     str_copy = str_copy + b'\0'
  *     try:
  */
-  __pyx_t_1 = __Pyx_PyBytes_FromString(__pyx_v_string); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyBytes_FromString(__pyx_v_string); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_str_copy = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "qrkit/qrencode.pyx":36
+  /* "qrkit/qrencode.pyx":34
  * 
  *     str_copy = string
  *     str_copy = str_copy + b'\0'             # <<<<<<<<<<<<<<
  *     try:
  *         _qrcode = QRcode_encodeString(str_copy, int(version), int(level),
  */
-  __pyx_t_1 = PyNumber_Add(__pyx_v_str_copy, __pyx_kp_b__3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Add(__pyx_v_str_copy, __pyx_kp_b__3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF_SET(__pyx_v_str_copy, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "qrkit/qrencode.pyx":37
+  /* "qrkit/qrencode.pyx":35
  *     str_copy = string
  *     str_copy = str_copy + b'\0'
  *     try:             # <<<<<<<<<<<<<<
@@ -1287,40 +1287,40 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_encode(CYTHON_UNUSED PyObject *__pyx_
  */
   /*try:*/ {
 
-    /* "qrkit/qrencode.pyx":38
+    /* "qrkit/qrencode.pyx":36
  *     str_copy = str_copy + b'\0'
  *     try:
  *         _qrcode = QRcode_encodeString(str_copy, int(version), int(level),             # <<<<<<<<<<<<<<
  *             int(mode), int(case_sensitive))
  *         qrcode = dict(
  */
-    __pyx_t_2 = __Pyx_PyObject_AsWritableString(__pyx_v_str_copy); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L4_error)
-    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_version); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L4_error)
+    __pyx_t_2 = __Pyx_PyObject_AsWritableString(__pyx_v_str_copy); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 36, __pyx_L4_error)
+    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_version); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L4_error)
+    __pyx_t_3 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_3 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 36, __pyx_L4_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L4_error)
+    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_level); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L4_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 36, __pyx_L4_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "qrkit/qrencode.pyx":39
+    /* "qrkit/qrencode.pyx":37
  *     try:
  *         _qrcode = QRcode_encodeString(str_copy, int(version), int(level),
  *             int(mode), int(case_sensitive))             # <<<<<<<<<<<<<<
  *         qrcode = dict(
  *                 version = _qrcode.version,
  */
-    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_mode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L4_error)
+    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_mode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 39, __pyx_L4_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L4_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_case_sensitive); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L4_error)
+    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_case_sensitive); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 39, __pyx_L4_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L4_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "qrkit/qrencode.pyx":38
+    /* "qrkit/qrencode.pyx":36
  *     str_copy = str_copy + b'\0'
  *     try:
  *         _qrcode = QRcode_encodeString(str_copy, int(version), int(level),             # <<<<<<<<<<<<<<
@@ -1329,48 +1329,48 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_encode(CYTHON_UNUSED PyObject *__pyx_
  */
     __pyx_v__qrcode = QRcode_encodeString(__pyx_t_2, __pyx_t_3, __pyx_t_4, __pyx_t_5, __pyx_t_6);
 
-    /* "qrkit/qrencode.pyx":41
+    /* "qrkit/qrencode.pyx":39
  *             int(mode), int(case_sensitive))
  *         qrcode = dict(
  *                 version = _qrcode.version,             # <<<<<<<<<<<<<<
  *                 width = _qrcode.width,
  *                 data = _qrcode.data
  */
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L4_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v__qrcode->version); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 41, __pyx_L4_error)
+    __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v__qrcode->version); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 39, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_version, __pyx_t_7) < 0) __PYX_ERR(0, 41, __pyx_L4_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_version, __pyx_t_7) < 0) __PYX_ERR(0, 39, __pyx_L4_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "qrkit/qrencode.pyx":42
+    /* "qrkit/qrencode.pyx":40
  *         qrcode = dict(
  *                 version = _qrcode.version,
  *                 width = _qrcode.width,             # <<<<<<<<<<<<<<
  *                 data = _qrcode.data
  *         )
  */
-    __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v__qrcode->width); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 42, __pyx_L4_error)
+    __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v__qrcode->width); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 40, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_width, __pyx_t_7) < 0) __PYX_ERR(0, 41, __pyx_L4_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_width, __pyx_t_7) < 0) __PYX_ERR(0, 39, __pyx_L4_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "qrkit/qrencode.pyx":43
+    /* "qrkit/qrencode.pyx":41
  *                 version = _qrcode.version,
  *                 width = _qrcode.width,
  *                 data = _qrcode.data             # <<<<<<<<<<<<<<
  *         )
  *     finally:
  */
-    __pyx_t_7 = __Pyx_PyBytes_FromCString(__pyx_v__qrcode->data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 43, __pyx_L4_error)
+    __pyx_t_7 = __Pyx_PyBytes_FromCString(__pyx_v__qrcode->data); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 41, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_data, __pyx_t_7) < 0) __PYX_ERR(0, 41, __pyx_L4_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_data, __pyx_t_7) < 0) __PYX_ERR(0, 39, __pyx_L4_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_v_qrcode = ((PyObject*)__pyx_t_1);
     __pyx_t_1 = 0;
   }
 
-  /* "qrkit/qrencode.pyx":46
+  /* "qrkit/qrencode.pyx":44
  *         )
  *     finally:
  *         free(_qrcode)             # <<<<<<<<<<<<<<
@@ -1418,7 +1418,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_encode(CYTHON_UNUSED PyObject *__pyx_
     __pyx_L5:;
   }
 
-  /* "qrkit/qrencode.pyx":48
+  /* "qrkit/qrencode.pyx":46
  *         free(_qrcode)
  * 
  *     return qrcode             # <<<<<<<<<<<<<<
@@ -1430,7 +1430,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_encode(CYTHON_UNUSED PyObject *__pyx_
   __pyx_r = __pyx_v_qrcode;
   goto __pyx_L0;
 
-  /* "qrkit/qrencode.pyx":29
+  /* "qrkit/qrencode.pyx":27
  * 
  * 
  * def encode(char *string, version=5, case_sensitive=True,             # <<<<<<<<<<<<<<
@@ -1452,7 +1452,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_encode(CYTHON_UNUSED PyObject *__pyx_
   return __pyx_r;
 }
 
-/* "qrkit/qrencode.pyx":50
+/* "qrkit/qrencode.pyx":48
  *     return qrcode
  * 
  * def to_matrix(qrcode):             # <<<<<<<<<<<<<<
@@ -1498,59 +1498,59 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
   int __pyx_t_12;
   __Pyx_RefNannySetupContext("to_matrix", 0);
 
-  /* "qrkit/qrencode.pyx":55
+  /* "qrkit/qrencode.pyx":53
  *     cdef unsigned char *qdata
  * 
  *     qwidth = qrcode['width']             # <<<<<<<<<<<<<<
  *     qdata = qrcode['data']
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_qrcode, __pyx_n_s_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_qrcode, __pyx_n_s_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_qwidth = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "qrkit/qrencode.pyx":56
+  /* "qrkit/qrencode.pyx":54
  * 
  *     qwidth = qrcode['width']
  *     qdata = qrcode['data']             # <<<<<<<<<<<<<<
  * 
  *     # build matrix
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_qrcode, __pyx_n_s_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_qrcode, __pyx_n_s_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_AsWritableUString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_AsWritableUString(__pyx_t_1); if (unlikely((!__pyx_t_2) && PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L1_error)
   __pyx_v_qdata = __pyx_t_2;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "qrkit/qrencode.pyx":59
+  /* "qrkit/qrencode.pyx":57
  * 
  *     # build matrix
  *     matrix = []             # <<<<<<<<<<<<<<
  *     for y in range(qwidth):
  *         line = []
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_matrix = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "qrkit/qrencode.pyx":60
+  /* "qrkit/qrencode.pyx":58
  *     # build matrix
  *     matrix = []
  *     for y in range(qwidth):             # <<<<<<<<<<<<<<
  *         line = []
  *         for x in range(qwidth):
  */
-  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_qwidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_qwidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_3 = __pyx_t_1; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 58, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -1558,17 +1558,17 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 58, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_1); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 58, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -1578,7 +1578,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 60, __pyx_L1_error)
+          else __PYX_ERR(0, 58, __pyx_L1_error)
         }
         break;
       }
@@ -1587,34 +1587,34 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
     __Pyx_XDECREF_SET(__pyx_v_y, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "qrkit/qrencode.pyx":61
+    /* "qrkit/qrencode.pyx":59
  *     matrix = []
  *     for y in range(qwidth):
  *         line = []             # <<<<<<<<<<<<<<
  *         for x in range(qwidth):
  *             if qdata[y * qwidth + x] % 2:
  */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_XDECREF_SET(__pyx_v_line, ((PyObject*)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "qrkit/qrencode.pyx":62
+    /* "qrkit/qrencode.pyx":60
  *     for y in range(qwidth):
  *         line = []
  *         for x in range(qwidth):             # <<<<<<<<<<<<<<
  *             if qdata[y * qwidth + x] % 2:
  *                 line.append(0)
  */
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_qwidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_qwidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
       __pyx_t_6 = __pyx_t_1; __Pyx_INCREF(__pyx_t_6); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
     } else {
-      __pyx_t_7 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 62, __pyx_L1_error)
+      __pyx_t_7 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 60, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_8 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 62, __pyx_L1_error)
+      __pyx_t_8 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 60, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     for (;;) {
@@ -1622,17 +1622,17 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
         if (likely(PyList_CheckExact(__pyx_t_6))) {
           if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_6)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 62, __pyx_L1_error)
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         } else {
           if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 62, __pyx_L1_error)
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         }
@@ -1642,7 +1642,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 62, __pyx_L1_error)
+            else __PYX_ERR(0, 60, __pyx_L1_error)
           }
           break;
         }
@@ -1651,33 +1651,33 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
       __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "qrkit/qrencode.pyx":63
+      /* "qrkit/qrencode.pyx":61
  *         line = []
  *         for x in range(qwidth):
  *             if qdata[y * qwidth + x] % 2:             # <<<<<<<<<<<<<<
  *                 line.append(0)
  *             else:
  */
-      __pyx_t_1 = PyNumber_Multiply(__pyx_v_y, __pyx_v_qwidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
+      __pyx_t_1 = PyNumber_Multiply(__pyx_v_y, __pyx_v_qwidth); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_9 = PyNumber_Add(__pyx_t_1, __pyx_v_x); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 63, __pyx_L1_error)
+      __pyx_t_9 = PyNumber_Add(__pyx_t_1, __pyx_v_x); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 61, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 63, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_9); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 61, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_11 = (__Pyx_mod_long((__pyx_v_qdata[__pyx_t_10]), 2) != 0);
       if (__pyx_t_11) {
 
-        /* "qrkit/qrencode.pyx":64
+        /* "qrkit/qrencode.pyx":62
  *         for x in range(qwidth):
  *             if qdata[y * qwidth + x] % 2:
  *                 line.append(0)             # <<<<<<<<<<<<<<
  *             else:
  *                 line.append(1)
  */
-        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_line, __pyx_int_0); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 64, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_line, __pyx_int_0); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 62, __pyx_L1_error)
 
-        /* "qrkit/qrencode.pyx":63
+        /* "qrkit/qrencode.pyx":61
  *         line = []
  *         for x in range(qwidth):
  *             if qdata[y * qwidth + x] % 2:             # <<<<<<<<<<<<<<
@@ -1687,7 +1687,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
         goto __pyx_L7;
       }
 
-      /* "qrkit/qrencode.pyx":66
+      /* "qrkit/qrencode.pyx":64
  *                 line.append(0)
  *             else:
  *                 line.append(1)             # <<<<<<<<<<<<<<
@@ -1695,11 +1695,11 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
  *     return matrix
  */
       /*else*/ {
-        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_line, __pyx_int_1); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 66, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_line, __pyx_int_1); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 64, __pyx_L1_error)
       }
       __pyx_L7:;
 
-      /* "qrkit/qrencode.pyx":62
+      /* "qrkit/qrencode.pyx":60
  *     for y in range(qwidth):
  *         line = []
  *         for x in range(qwidth):             # <<<<<<<<<<<<<<
@@ -1709,16 +1709,16 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "qrkit/qrencode.pyx":67
+    /* "qrkit/qrencode.pyx":65
  *             else:
  *                 line.append(1)
  *         matrix.append(line)             # <<<<<<<<<<<<<<
  *     return matrix
  * 
  */
-    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_matrix, __pyx_v_line); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 67, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_matrix, __pyx_v_line); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 65, __pyx_L1_error)
 
-    /* "qrkit/qrencode.pyx":60
+    /* "qrkit/qrencode.pyx":58
  *     # build matrix
  *     matrix = []
  *     for y in range(qwidth):             # <<<<<<<<<<<<<<
@@ -1728,7 +1728,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "qrkit/qrencode.pyx":68
+  /* "qrkit/qrencode.pyx":66
  *                 line.append(1)
  *         matrix.append(line)
  *     return matrix             # <<<<<<<<<<<<<<
@@ -1740,7 +1740,7 @@ static PyObject *__pyx_pf_5qrkit_8qrencode_2to_matrix(CYTHON_UNUSED PyObject *__
   __pyx_r = __pyx_v_matrix;
   goto __pyx_L0;
 
-  /* "qrkit/qrencode.pyx":50
+  /* "qrkit/qrencode.pyx":48
  *     return qrcode
  * 
  * def to_matrix(qrcode):             # <<<<<<<<<<<<<<
@@ -1832,7 +1832,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 58, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -1842,29 +1842,29 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "qrkit/qrencode.pyx":29
+  /* "qrkit/qrencode.pyx":27
  * 
  * 
  * def encode(char *string, version=5, case_sensitive=True,             # <<<<<<<<<<<<<<
  *         mode=QR_MODE_8, level=QR_MODE_8):
  *     """ create a QR code from a String """
  */
-  __pyx_tuple__4 = PyTuple_Pack(8, __pyx_n_s_string, __pyx_n_s_version, __pyx_n_s_case_sensitive, __pyx_n_s_mode, __pyx_n_s_level, __pyx_n_s_qrcode, __pyx_n_s_str_copy, __pyx_n_s_qrcode_2); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(8, __pyx_n_s_string, __pyx_n_s_version, __pyx_n_s_case_sensitive, __pyx_n_s_mode, __pyx_n_s_level, __pyx_n_s_qrcode, __pyx_n_s_str_copy, __pyx_n_s_qrcode_2); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(5, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_qrkit_qrencode_pyx, __pyx_n_s_encode, 29, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(5, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_qrkit_qrencode_pyx, __pyx_n_s_encode, 27, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 27, __pyx_L1_error)
 
-  /* "qrkit/qrencode.pyx":50
+  /* "qrkit/qrencode.pyx":48
  *     return qrcode
  * 
  * def to_matrix(qrcode):             # <<<<<<<<<<<<<<
  *     """ Convert a QRcode to a matrix of ones and zeros """
  * 
  */
-  __pyx_tuple__6 = PyTuple_Pack(7, __pyx_n_s_qrcode_2, __pyx_n_s_qdata, __pyx_n_s_qwidth, __pyx_n_s_matrix, __pyx_n_s_y, __pyx_n_s_line, __pyx_n_s_x); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(7, __pyx_n_s_qrcode_2, __pyx_n_s_qdata, __pyx_n_s_qwidth, __pyx_n_s_matrix, __pyx_n_s_y, __pyx_n_s_line, __pyx_n_s_x); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
-  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_qrkit_qrencode_pyx, __pyx_n_s_to_matrix, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_qrkit_qrencode_pyx, __pyx_n_s_to_matrix, 48, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -2119,52 +2119,52 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "qrkit/qrencode.pyx":30
+  /* "qrkit/qrencode.pyx":28
  * 
  * def encode(char *string, version=5, case_sensitive=True,
  *         mode=QR_MODE_8, level=QR_MODE_8):             # <<<<<<<<<<<<<<
  *     """ create a QR code from a String """
  * 
  */
-  __pyx_t_1 = __Pyx_PyInt_From_int(QR_MODE_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(QR_MODE_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_k_ = __pyx_t_1;
   __Pyx_GIVEREF(__pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(QR_MODE_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(QR_MODE_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_k__2 = __pyx_t_1;
   __Pyx_GIVEREF(__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "qrkit/qrencode.pyx":29
+  /* "qrkit/qrencode.pyx":27
  * 
  * 
  * def encode(char *string, version=5, case_sensitive=True,             # <<<<<<<<<<<<<<
  *         mode=QR_MODE_8, level=QR_MODE_8):
  *     """ create a QR code from a String """
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5qrkit_8qrencode_1encode, NULL, __pyx_n_s_qrkit_qrencode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5qrkit_8qrencode_1encode, NULL, __pyx_n_s_qrkit_qrencode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_encode, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_encode, __pyx_t_1) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "qrkit/qrencode.pyx":50
+  /* "qrkit/qrencode.pyx":48
  *     return qrcode
  * 
  * def to_matrix(qrcode):             # <<<<<<<<<<<<<<
  *     """ Convert a QRcode to a matrix of ones and zeros """
  * 
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5qrkit_8qrencode_3to_matrix, NULL, __pyx_n_s_qrkit_qrencode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5qrkit_8qrencode_3to_matrix, NULL, __pyx_n_s_qrkit_qrencode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_to_matrix, __pyx_t_1) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_to_matrix, __pyx_t_1) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "qrkit/qrencode.pyx":1
- * # -*- coding: utf-8 -             # <<<<<<<<<<<<<<
- * #
- * # This file is part of qrkit releasedi in the Public Domain.
+ * # This file is part of qrkit releasedi in the Public Domain.             # <<<<<<<<<<<<<<
+ * # See the NOTICE for more information.
+ * 
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
