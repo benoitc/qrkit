@@ -1,36 +1,34 @@
-# -*- coding: utf-8 -*-
-#
 # This file is part of qrkit released in the Public Domain.
 # See the NOTICE for more information.
 
 try:
     from PIL.ImageOps import expand as img_expand
-    from PIL.Image import fromstring as img_fromstring
+    from PIL.Image import frombytes as img_frombytes
 except ImportError:
-    try:
-        from ImageOps import expand as img_expand
-        from Image import fromstring as img_fromstring
-    except ImportError:
-        raise ImportError('Please install PIL or Pillow.')
+    raise ImportError('Please install PIL or Pillow.')
 
 from qrkit.qrencode import encode, to_matrix
 
 
-def encode_to_img(string, width=400, border=10):
-    if not string or not string.strip(b'\x00'):
+def encode_to_img(data, width=400, border=10):
+    if not isinstance(data, bytes):
+        raise ValueError("Please use encode bytes to image.")
+
+    if not data or not data.strip(b'\x00'):
         raise ValueError("You cannot encode a null data in a qrcode.")
-    qrcode = encode(string)
+
+    qrcode = encode(data)
     matrix = to_matrix(qrcode)
 
-    dotsize = (width - (border * 2)) / qrcode['width']
+    dotsize = (width - (border * 2)) // qrcode['width']
     realwidth = qrcode['width'] * dotsize
 
-    rawdata = ''
+    rawdata = b''
     for row in matrix:
-        line = ''
+        line = b''
         for col in row:
-            line += dotsize * chr(col * 255)
+            line += dotsize * bytes([col * 255])
         rawdata += dotsize * line
 
-    img = img_fromstring('L', (realwidth, realwidth), rawdata)
+    img = img_frombytes('L', (realwidth, realwidth), rawdata)
     return img_expand(img, border, 255)

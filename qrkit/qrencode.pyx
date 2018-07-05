@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -
-#
 # This file is part of qrkit releasedi in the Public Domain. 
 # See the NOTICE for more information.
 
@@ -33,7 +31,7 @@ def encode(char *string, version=5, case_sensitive=True,
     cdef QRcode *_qrcode
 
     str_copy = string
-    str_copy = str_copy + '\0'
+    str_copy = str_copy + b'\0'
     try:
         _qrcode = QRcode_encodeString(str_copy, int(version), int(level),
             int(mode), int(case_sensitive))
